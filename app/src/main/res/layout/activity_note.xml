@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".NoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/title_text"
+                android:layout_width="333dp"
+                android:layout_height="48dp"
+                android:hint="Title"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/body_text"
+                android:layout_width="335dp"
+                android:layout_height="525dp"
+                android:layout_marginBottom="100dp"
+                android:gravity="top|left"
+                android:hint="Body"
+                android:inputType="text"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_picture_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Photo"/>
+
+            <Button
+                android:id="@+id/add_sketch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Sketch"/>
+
+            <Button
+                android:id="@+id/save_note_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Save"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
